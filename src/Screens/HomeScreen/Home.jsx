@@ -5,9 +5,7 @@ import { AntDesign, Entypo, Ionicons, Octicons } from "@expo/vector-icons";
 import History from "../HistoryScreen/History";
 import NewDonation from "../NewDonationScreen/NewDonation";
 import Profile from "../ProfileScreen/Profile";
-import { StyleSheet, View, TextInput, Image } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { AntDesign, Entypo, Ionicons, Octicons } from "@expo/vector-icons";
 
 // Import your screens
 
