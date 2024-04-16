@@ -160,12 +160,13 @@ const styles = StyleSheet.create({
     marginTop: 120,
   },
   leftVectorContainer: {
-    position: "absolute",
-    bottom: 0,
+    position: "relative",
+    bottom: 90,
     left: 0,
   },
   leftVectorImage: {
-    height: 285,
-    width: 220,
+    height: 520,
+    width: 350,
+    // transform: "scale(1.5)",
   },
 });

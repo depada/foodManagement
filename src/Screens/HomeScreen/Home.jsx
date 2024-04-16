@@ -2,43 +2,17 @@ import { Image, StyleSheet, Text, TextInput, View } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign, Entypo, Ionicons, Octicons } from "@expo/vector-icons";
-import Notification from "../NotificationScreen/Notification";
+import History from "../HistoryScreen/History";
 import NewDonation from "../NewDonationScreen/NewDonation";
-import Profile from "../ProfileScreen/Profile.jsx";
-import History from "../HistoryScreen/History.jsx";
+import Profile from "../ProfileScreen/Profile";
+import { StyleSheet, View, TextInput, Image } from "react-native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { AntDesign, Entypo, Ionicons, Octicons } from "@expo/vector-icons";
 
-const TabArr = [
-  {
-    route: "Home",
-    label: "Home",
-    icon: <Entypo name="home" size={24} color="black" />,
-    component: Home,
-  },
-  {
-    route: "Notifications",
-    label: "Notifications",
-    icon: <Ionicons name="notifications-outline" size={24} color="black" />,
-    component: Notification,
-  },
-  {
-    route: "newDonation",
-    label: "New Donation",
-    icon: <AntDesign name="plus" size={24} color="black" />,
-    component: NewDonation,
-  },
-  {
-    route: "Profile",
-    label: "Profile",
-    icon: <AntDesign name="plus" size={24} color="black" />,
-    component: Profile,
-  },
-  {
-    route: "History",
-    label: "History",
-    icon: <Octicons name="history" size={24} color="black" />,
-    component: History,
-  },
-];
+// Import your screens
+
+const Tab = createBottomTabNavigator();
+
 const Home = () => {
   return (
     <SafeAreaView>
